@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LienHeActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:title="Thông Tin"
+        app:titleTextColor="#3E3C3C"
+        android:id="@+id/toobarthongtin2"
+        android:background="#D1CFCE"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/lo1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#111212"
+            android:text="Cửa hàng của chúng tôi sủ dụng nguồn nguyên liệu sạch , cao cấp, có nguồn gốc từ Châu Âu"
+            android:textColor="#F4EEEE"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/slide1"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="495dp"
+            android:layout_height="495dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="350dp"
+                android:layout_height="495dp"
+                android:background="@drawable/pd1"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:gravity="center"
+                android:background="#232222"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:textColor="#F4EEEE"
+                android:textStyle="italic"
+                android:textSize="17sp"
+                android:text="Tất cả sản phầm đều được kiểm tra chất lượng kĩ càng trước khi đến tay khách hàng "/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv3"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:background="@drawable/pd2"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <TextView
+                android:id="@+id/tv3"
+                android:background="#0C0C0C"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Chúng tôi có những đầu bếp hàng đầu."
+                android:gravity="center"
+                android:textColor="#F3EEEE"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/chess1"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/chess2"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv6"
+                    android:layout_width="350dp"
+                    android:layout_height="400dp"
+                    android:background="@drawable/shop1"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:text="Và,hãy đến cửa hàng của chúng tôi!"
+                    android:textColor="#F3F0EF"
+                    android:background="#101010"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv7"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/shop2"/>
+            <ImageView
+                android:id="@+id/iv8"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/shop3"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

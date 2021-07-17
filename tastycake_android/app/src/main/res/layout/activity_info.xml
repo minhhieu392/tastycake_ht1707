@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        app:title="Liên Hệ"
+        android:id="@+id/toobarthongtin"
+        android:background="#D1CFCE"
+        app:titleTextColor="#504C4B"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:background="@drawable/bgr2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Thông tin về chúng tôi"
+            android:textSize="25sp"
+            android:textColor="#433D3D"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#655A57"
+                android:text="Liên hệ :0379663319"
+                android:textStyle="bold"
+                android:background="@null"
+                android:layout_margin="5dp"
+                android:textSize="20sp" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#655A57"
+                android:text="Website :Tastycake.com"
+                android:background="@null"
+                android:layout_margin="5dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            tools:context=".InfoActivity" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_margin="25dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/fb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageButton
+                android:layout_margin="25dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/logoins"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageButton
+                android:layout_margin="25dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/tw"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
